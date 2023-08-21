@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
 import { useQuery, gql } from "@apollo/client";
 
 const GET_BLOGPOSTS = gql`
@@ -12,16 +11,18 @@ const GET_BLOGPOSTS = gql`
     }
   }
 `;
+
 const BlogList = () => {
-  const { error, loading, data } = useQuery(GET_BLOGPOSTS);
-  console.log({ error, loading, data });
+  const { error, data, loading } = useQuery(GET_BLOGPOSTS);
+  console.log({ error, data, loading });
   return (
     <div>
-      {data.posts.map((post) => {
+      <p>Whats going on</p>
+      {data.posts.map((blog) => {
         return (
           <div>
-            {post.title}
-            <p>{post.body}</p>
+            <h2>{blog.title}</h2>
+            <p>{blog.body}</p>
           </div>
         );
       })}
