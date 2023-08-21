@@ -11,7 +11,12 @@ const CreateBlog = () => {
 
   return (
     <div className="formWrap">
-      <form className="">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+        className=""
+      >
         <p className="titles">Blog Form</p>
         <div className="titleWrap">
           <label>Title of your Post</label>

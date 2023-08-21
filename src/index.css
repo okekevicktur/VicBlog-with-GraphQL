@@ -32,34 +32,38 @@ body {
   
 }
 .header{
-  background-color: #9095f8;
-  display: flex;
- margin-bottom: 30px;
+  background-color: rgb(81, 38, 202);
+  /* display: inline-block; */
+ margin-bottom: 20px;
+ position: fixed;
  color: whitesmoke;
+ width: 100%;
 
 }
 .aside{
   align-items: center;
   display: flex;
-  /* width: %; */
-  position: absolute;
+  position: absolute; 
   right: 0;
-  padding:0 10px;
-  text-align: center;
-  /* justify-content: space-around; */
+  padding:0 15px;
+
+  background-color:  #646cff;
+  /* width: 70%; */
+  justify-content: right;
+  
+  
 }
 
 .title{
   text-align: center;
   justify-content: center;
-  width: 40%;
+ padding: 0 5px;
   align-items: center ;
   font-weight: 500;
   font-size: large;
 }
 
 .aside p{
-  /* background-color: green; */
   margin-right: 15px;
 }
 
@@ -67,32 +71,34 @@ body {
   border-radius: 8px;
    padding: 8px 6px;
   text-align: center;
-   background-color: rgb(10, 73, 189);
+   background-color: rgb(81, 38, 202);
   cursor: pointer;
   color: white;
 }
 .blogCard{
   width: 250px;
   background-color: #646cff;
+  border-bottom-right-radius: 10px;
 }
 .formWrap{
   width: 90%;
   margin: 20px auto;
-  padding: 10px 5px;
-  /* background-color: black; */
+  color: white;
   box-shadow:5px 5px 3px #b4b6dd;
 
 }
 form{
-  /* background-color: green; */
-  padding: 10px 5px;
+  padding: 10px 10px;
   width: 100%;
+  background-color: rgb(81, 38, 202);
+  border-radius: 10px;
 }
 
 .blogContainer{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 130px;
   justify-content: space-evenly;
 }
 input{
@@ -112,6 +118,11 @@ input{
   height: 100px;
   text-align: left;
   margin-bottom: 60px;
+}
+button{
+  background-color:  #646cff;;
+padding: 7px 5px ;
+border-radius: 7px;
 }
 textarea  {
   width: 90%;
